@@ -1,0 +1,14 @@
+.github_push h1{
+    color: blue;
+    text-decoration: underline;
+    margin: 10px;
+}
+.github_push ol{
+    color: tomato;
+    font-weight: bold;
+}
+.github_push li{
+    border: 2px solid green;
+    margin: 5px;
+    border-width: justify;
+}
