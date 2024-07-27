@@ -1,17 +1,39 @@
-.github_push h1{
-    color: blue;
-    text-decoration: underline;
-    margin: 10px;
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    font-family: "Open Sans", sans-serif;
 }
-.github_push ol{
-    color: tomato;
-    font-weight: bold;
+
+.food-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
 }
-.github_push li{
-    border: 5px solid green;
-    margin: 5px;
-    width: 20%;
-    padding: 5px;
-    background-color: aquamarine;
-    text-align: center;
+.food{
+    border: 2px solid skyblue;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.food img{
+    width: 100%;
+}
+
+/* small device */
+@media screen and (max-width:576px) {
+    .food-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+/* medium device */
+@media screen and (min-width:577px) and (max-width: 768px) {
+    .food-container{
+        grid-template-columns: repeat(2,1fr);
+    } 
+}
+/* large device */
+@media screen and (min-width:769px) and (max-width: 1200px) {
+    .food-container{
+        grid-template-columns: repeat(3,1fr);
+    } 
 }
